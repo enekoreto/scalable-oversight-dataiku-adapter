@@ -213,7 +213,7 @@ If `starni_evaluation_pipeline` does not exist in your Dataiku instance, ask the
 
 Open the Python recipe editor. For this documented flow, first copy and paste the full contents of:
 
-- dataiku-evaluation-adapter/dataiku_evaluation_recipe.py
+- scalable-oversight-dataiku-adapter/dataiku_evaluation_recipe.py
 
 Then review and update these values in the code:
 
