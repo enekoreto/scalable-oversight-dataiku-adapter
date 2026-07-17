@@ -75,7 +75,7 @@ Optional:
 
 - OPENLAYER_API_URL
 - OPENLAYER_METADATA_ENV
-- OPENLAYER_FOLDER_ID (only for managed-folder upload or managed-folder log export flows; not required by dataiku_benchmarks_output1_recipe.py)
+- OPENLAYER_FOLDER_ID (only for managed-folder upload or managed-folder log export flows; not required by dataiku_evaluation_recipe.py)
 
 These variables are optional because the recipe can run with the default OpenLayer API endpoint and can infer metadata defaults when no overrides are provided.
 
@@ -213,7 +213,7 @@ If `starni_evaluation_pipeline` does not exist in your Dataiku instance, ask the
 
 Open the Python recipe editor. For this documented flow, first copy and paste the full contents of:
 
-- dataiku_pipeline/dataiku_benchmarks_output1_recipe.py
+- dataiku-evaluation-adapter/dataiku_evaluation_recipe.py
 
 Then review and update these values in the code:
 
@@ -317,11 +317,11 @@ For trend analysis or model comparisons, the same final dataset can also be open
 
 ## 8. Files in This Folder
 
-- dataiku_benchmarks_output1_recipe.py
+- dataiku_evaluation_recipe.py
   Copy-paste Dataiku Python recipe for benchmark extraction in the starter evaluation flow.
-- openlayer_dataiku_runner.py
+- dataiku_scenario_runner.py
   Scenario-oriented runner for a broader automated flow.
-- dataiku_build_log_out_from_folder.py
+- dataiku_audit_export_builder.py
   Helper script for building Dataiku datasets from exported log artifacts.
 
 ## 8. Recommended End State in Dataiku

@@ -44,7 +44,7 @@ Optional:
 
 - `OPENLAYER_API_URL` (only if you use a non-default OpenLayer API endpoint)
 - `OPENLAYER_METADATA_ENV` (optional multiline env-like text for metadata defaults)
-- `OPENLAYER_FOLDER_ID` (only for managed-folder upload or managed-folder log export flows; not required by `dataiku_benchmarks_output1_recipe.py`)
+- `OPENLAYER_FOLDER_ID` (only for managed-folder upload or managed-folder log export flows; not required by `dataiku_evaluation_recipe.py`)
 
 These variables are optional because the recipe can run with the default OpenLayer API endpoint and can infer metadata defaults when no overrides are provided.
 
