@@ -10,7 +10,7 @@ Usage in a Dataiku Python recipe:
 import dataiku
 import pandas as pd
 
-MANAGED_FOLDER_ID = "NRRjrKPW"
+MANAGED_FOLDER_ID = "YOUR_MANAGED_FOLDER_ID"  # Replace with your actual managed folder ID
 OUTPUT_DATASET = "log_out"
 
 folder = dataiku.Folder(MANAGED_FOLDER_ID)
