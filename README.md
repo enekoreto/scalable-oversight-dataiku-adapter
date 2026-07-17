@@ -27,10 +27,10 @@ Before you start the setup, make sure you already know these project-specific va
 
 Before configuring Dataiku, make sure the user has completed the access and setup steps below:
 
-1. Request both GitHub and OpenLayer access in KPN IAM as a user so you can access the repository and the required OpenLayer workspace.
-2. Use the KPN GitHub login page at https://github.com/enterprises/kpn/sso when signing in to GitHub.
-3. If the KPN password manager is not already installed and set up on your machine, install it from the Microsoft Store in Edge and complete the setup by following the KPN instructions.
-4. Create an OpenLayer account at https://app.openlayer.com and use KPN credentials when creating the account.
+1. Request both GitHub and OpenLayer access so you can access the repository and the required OpenLayer workspace.
+2. Sign in to GitHub and the enterprise OpenLayer workspace using your company single sign-on (SSO).
+3. If applicable, ensure your team's password manager or vault is set up to access required credentials.
+4. Create an OpenLayer account at https://app.openlayer.com using your company credentials when creating the account.
 5. Use the OpenLayer SSO login page at https://app.openlayer.com/sso when signing in to OpenLayer.
 6. Request access to the OpenLayer project that should receive the benchmark runs.
 7. Confirm that this OpenLayer project already has the intended benchmark/test suite configured for the evaluation you want to run.
@@ -205,11 +205,11 @@ Recommended setup:
 
 1. Input dataset: the prepared dataset from the Prepare recipe.
 2. Output dataset: a benchmark history dataset, for example benchmarks_output1.
-3. In KPN Dataiku, select the established code environment `starni_evaluation_pipeline` for this Python recipe when it is available.
+3. In Dataiku, select an established code environment with the required dependencies for this Python recipe when it is available.
   This is the preferred option to get the script running faster because the required packages are already preinstalled there.
 4. In the Dataiku recipe output settings, set the output write mode to Append.
 
-If `starni_evaluation_pipeline` does not exist in your Dataiku instance, ask the Dataiku administrator or the team owning this flow which code environment should be used instead.
+If a pre-configured code environment does not exist in your Dataiku instance, ask the Dataiku administrator or the team owning this flow which code environment should be used instead.
 
 Open the Python recipe editor. For this documented flow, first copy and paste the full contents of:
 

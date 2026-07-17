@@ -13,9 +13,9 @@ Scope: this guide is for the summaries flow. A future RAG extension can reuse th
 
 Before starting, complete these steps:
 
-1. Request GitHub access in KPN IAM so you can access the repository and related project files.
+1. Request GitHub access so you can access the repository and related project files.
 2. Make sure you have a Dataiku project with permission to create recipes and datasets.
-3. Create an OpenLayer account at https://app.openlayer.com using KPN credentials.
+3. Create an OpenLayer account at https://app.openlayer.com using your company credentials.
 4. Request access to the correct OpenLayer project.
 5. Obtain the OpenLayer API key and OpenLayer project id.
 6. In OpenLayer, open Settings > Environment variables and configure the LLM provider API variables required for LLM-as-a-judge benchmarks.
@@ -164,7 +164,7 @@ Use the OpenLayer Python recipe with:
 
 - input dataset: prepared dataset from Step 5
 - output dataset: results history dataset (example: `benchmarks_output1`)
-- selected Dataiku code environment: `starni_evaluation_pipeline`
+- selected Dataiku code environment: `<your_evaluation_code_env>`
 
 In the script, make sure constants match:
 
